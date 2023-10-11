@@ -104,6 +104,25 @@ nav a {
 	cursor: pointer;
 }
 
+/* Main Article */
+
+.main-article {
+	margin-top: 1rem;
+}
+.main-article h1 {
+	padding: 0.5rem 0;
+	border-bottom: 1px solid white;
+	margin-bottom: 1rem;
+}
+
+/* Footer */
+
+footer {
+	background-color: rgb(100, 98, 98);
+	padding: 1rem 0.4rem 0.4rem;
+	text-align: center;
+}
+
 /* Media queries */
 
 @media screen and (min-width: 768px) {
