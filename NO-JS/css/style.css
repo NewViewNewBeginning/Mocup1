@@ -46,6 +46,9 @@ body {
 	background-color: black;
 	color: white;
 }
+.wrapper {
+	padding: 0 1rem;
+}
 
 /* Header */
 
@@ -61,7 +64,7 @@ body {
 }
 
 nav {
-	display: flex;
+	display: none;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -74,11 +77,43 @@ nav a {
 	border-bottom: 1px solid white;
 }
 
-/* Menu + hamburger */
+/* Hamburger */
 
 .fa-solid {
 	font-size: 2.5rem;
 }
 #close-ham {
 	display: none;
+}
+
+/* Showcase */
+
+.showcase,
+.main-image img {
+	width: 100%;
+}
+.thumbnails {
+	display: flex;
+	justify-content: space-between;
+	background-color: darkgray;
+	padding: 2px;
+}
+.thumbnails img {
+	padding: 1px;
+	width: 20%;
+	cursor: pointer;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 768px) {
+	#open-ham {
+		display: none;
+	}
+	#close-ham {
+		display: block;
+	}
+	nav {
+		display: flex;
+	}
 }
