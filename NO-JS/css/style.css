@@ -161,6 +161,10 @@ footer {
 	padding: 1rem 0 0.4rem;
 	text-align: center;
 }
+footer p,
+footer address {
+	display: inline-block;
+}
 
 /* Media queries */
 
