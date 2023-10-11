@@ -93,15 +93,28 @@ nav a {
 .main-image img {
 	width: 100%;
 }
+.main-image img {
+	height: auto;
+}
+.main-img-text {
+	display: none;
+}
 .thumbnails {
 	display: flex;
 	justify-content: space-between;
 	background-color: darkgray;
 	padding: 2px;
 }
-.thumbnails img {
-	padding: 1px;
+.thumbnail {
 	width: 20%;
+}
+.thumbnail-text {
+	display: none;
+}
+.thumbnail img {
+	padding: 1px;
+	height: 100%;
+	width: 100%;
 	cursor: pointer;
 }
 
@@ -166,6 +179,7 @@ footer {
 }
 
 /* Desktop */
+
 @media screen and (min-width: 966px) {
 	.wrapper {
 		padding: 0 4rem;
@@ -185,6 +199,51 @@ footer {
 	#close-ham {
 		display: none;
 	}
+	/* Showcase with images */
+	.showcase {
+		display: flex;
+		justify-content: space-between;
+		gap: 3rem;
+	}
+	.main-image {
+		width: 60%;
+	}
+	.main-image img {
+		height: 80%;
+		width: 100%;
+		object-fit: cover;
+	}
+	.main-img-title {
+		font-size: 1.2rem;
+		font-weight: 600;
+	}
+	.main-img-text {
+		display: block;
+		padding: 1rem;
+	}
+	.thumbnails {
+		width: 40%;
+		background: transparent;
+		flex-direction: column;
+		justify-content: flex-end;
+		gap: 1rem;
+	}
+	.thumbnail {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		gap: 1rem;
+	}
+	.thumbnail img {
+		width: 40%;
+		height: auto;
+		object-fit: cover;
+		border: 1px solid grey;
+	}
+	.thumbnail-text {
+		display: block;
+	}
+
 	.events {
 		display: flex;
 	}
@@ -193,9 +252,9 @@ footer {
 		display: block;
 		background-color: #222222;
 		padding: 2rem;
-		margin-top: 1rem;
+		margin-top: 2rem;
 	}
 	.sub-baner p {
-		font-style: italic;
+		font-weight: 600;
 	}
 }
