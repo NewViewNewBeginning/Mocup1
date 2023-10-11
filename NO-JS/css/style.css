@@ -1,4 +1,4 @@
-/* Basic CSS Reset
+/* =========>> BASIC CSS RESET <<========= */
 
 /* Box sizing rules */
 *,
@@ -34,7 +34,7 @@ a {
 	text-decoration: none;
 }
 
-/* ------> Basic Styles <--------- */
+/* =========>> BASIC STYLES <<========= */
 
 body {
 	font-family: sans-serif, Arial, Helvetica;
@@ -51,7 +51,7 @@ h2 {
 	font-size: 1.2rem;
 }
 
-/* Header */
+/* =========>> HEADER STYLES <<========= */
 
 .nav-top {
 	display: flex;
@@ -63,7 +63,7 @@ h2 {
 	height: 4rem;
 	width: auto;
 }
-
+/* Navigation styles (default hidden) */
 nav {
 	display: none;
 	flex-direction: column;
@@ -71,6 +71,7 @@ nav {
 	align-items: center;
 	gap: 1rem;
 }
+/* Navigation link styles */
 nav a {
 	text-align: center;
 	padding-bottom: 0.5rem;
@@ -78,16 +79,19 @@ nav a {
 	border-bottom: 1px solid white;
 }
 
-/* Hamburger */
+/* Hamburger icon style */
 
 .fa-solid {
 	font-size: 2.5rem;
 }
+/* Close icon for hamburger menu (default hidden) */
 #close-ham {
 	display: none;
 }
 
-/* Showcase */
+/* =========>> SHOWCASE SECTION <<========= */
+
+/* Styles for the showcase and main image */
 
 .showcase,
 .main-image img {
@@ -96,9 +100,15 @@ nav a {
 .main-image img {
 	height: auto;
 }
+
+/* Text overlaying main image (default hidden) */
+
 .main-img-text {
 	display: none;
 }
+
+/* Thumbnail styles */
+
 .thumbnails {
 	display: flex;
 	justify-content: space-between;
@@ -118,13 +128,13 @@ nav a {
 	cursor: pointer;
 }
 
-/* SubBanner */
+/* =========>> SUBBANNER SECTION <<========= */
 
 .sub-baner {
 	display: none;
 }
 
-/* Main Article */
+/* =========>> MAIN ARTICLE STYLES <<========= */
 
 .main-article {
 	margin: 1rem 0;
@@ -135,7 +145,8 @@ nav a {
 	margin-bottom: 1rem;
 }
 
-/* Events section */
+/* =========>> EVENTS SECTION <<========= */
+
 .event-half {
 	display: flex;
 }
@@ -154,21 +165,17 @@ nav a {
 	padding: 0.4rem;
 }
 
-/* Footer */
+/* =========>> FOOTER STYLES <<========= */
 
 footer {
 	background-color: #222222;
 	padding: 1rem 0 0.4rem;
 	text-align: center;
 }
-footer p,
-footer address {
-	display: inline-block;
-}
 
-/* Media queries */
+/* =========>> MEDIA QUERIES <<========= */
 
-/* Tablet */
+/* Tablet styles */
 
 @media screen and (min-width: 568px) {
 	#open-ham {
@@ -182,7 +189,7 @@ footer address {
 	}
 }
 
-/* Desktop */
+/* Desktop styles */
 
 @media screen and (min-width: 966px) {
 	.wrapper {
@@ -260,5 +267,8 @@ footer address {
 	}
 	.sub-baner p {
 		font-weight: 600;
+	}
+	footer {
+		margin-top: 2rem;
 	}
 }
