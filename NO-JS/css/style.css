@@ -283,6 +283,6 @@ footer {
 	}
 	footer {
 		margin: 2rem auto 0;
-		width: 1200px;
+		max-width: 1200px;
 	}
 }
