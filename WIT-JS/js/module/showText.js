@@ -1,34 +1,29 @@
 export function showText() {
 	const showHideTextLinks = document.querySelectorAll(".show-text");
+	let fullTexts = [];
 
-	showHideTextLinks.forEach(link => {
+	showHideTextLinks.forEach((link, index) => {
+		const textElement = link.previousElementSibling;
+		fullTexts[index] = textElement.textContent; // Store full text in array
+
+		// Initial truncate if needed
+		if (fullTexts[index].length > 100) {
+			textElement.textContent = truncateText(fullTexts[index]);
+		}
+
+		// Attach click event
 		link.addEventListener("click", e => {
-			const textElement = e.target.previousElementSibling;
-			const fullText = textElement.getAttribute("data-full-text");
 			const currentText = textElement.textContent;
 
 			// If text is truncated
 			if (currentText.endsWith("...")) {
-				textElement.textContent = fullText;
-				link.textContent = "Show less";
+				textElement.textContent = fullTexts[index];
+				e.target.textContent = "Show less";
 			} else {
-				textElement.textContent = truncateText(fullText);
-				link.textContent = "Click here for more informations";
+				textElement.textContent = truncateText(fullTexts[index]);
+				e.target.textContent = "Click here for more informations";
 			}
 		});
-	});
-
-	initialTruncate();
-}
-
-function initialTruncate() {
-	const allTexts = document.querySelectorAll(".event-text");
-	allTexts.forEach(textElement => {
-		if (textElement.textContent.length > 100) {
-			// Store the full text in a custom attribute
-			textElement.setAttribute("data-full-text", textElement.textContent);
-			textElement.textContent = truncateText(textElement.textContent);
-		}
 	});
 }
 
