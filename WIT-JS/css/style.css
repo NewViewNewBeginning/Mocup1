@@ -36,11 +36,20 @@ a {
 
 /* =========>> BASIC STYLES <<========= */
 
+/* Main colors variables */
+
+:root {
+	--main-bg: #000000;
+	--secondary-bg: #222222;
+	--text-secondary-color: #beb4b4;
+	--text-color: #f2f2f2;
+}
+
 body {
 	font-family: sans-serif, Arial, Helvetica;
 	line-height: 1.5;
-	background-color: black;
-	color: white;
+	background-color: var(--main-bg);
+	color: var(--text-color);
 }
 .wrapper {
 	margin: 0 auto;
@@ -49,6 +58,10 @@ body {
 
 h2 {
 	font-size: 1.2rem;
+}
+
+.grey-text {
+	color: var(--text-secondary-color);
 }
 
 /* =========>> HEADER STYLES <<========= */
@@ -76,7 +89,7 @@ nav a {
 	text-align: center;
 	padding-bottom: 0.5rem;
 	width: 100%;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid var(--text-color);
 }
 
 /* Hamburger icon style */
@@ -112,7 +125,7 @@ nav a {
 .thumbnails {
 	display: flex;
 	justify-content: space-between;
-	background-color: darkgray;
+	background-color: var(--text-secondary-color);
 	padding: 2px;
 }
 .thumbnail {
@@ -141,7 +154,7 @@ nav a {
 }
 .main-article h1 {
 	padding: 0.5rem 0;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid var(--text-color);
 	margin-bottom: 1rem;
 }
 
@@ -159,7 +172,7 @@ nav a {
 	width: 100%;
 	object-fit: cover;
 	padding-right: 0.4rem;
-	border-right: 1px solid grey;
+	border-right: 1px solid var(--text-secondary-color);
 }
 .event-card {
 	padding: 0.4rem;
@@ -168,7 +181,7 @@ nav a {
 /* =========>> FOOTER STYLES <<========= */
 
 footer {
-	background-color: #222222;
+	background-color: var(--secondary-bg);
 	padding: 1rem 0 0.4rem;
 	text-align: center;
 }
@@ -249,7 +262,7 @@ footer {
 		width: 40%;
 		height: auto;
 		object-fit: cover;
-		border: 1px solid grey;
+		border: 1px solid var(--text-secondary-color);
 	}
 	.thumbnail-text {
 		display: block;
@@ -269,6 +282,7 @@ footer {
 		font-weight: 600;
 	}
 	footer {
-		margin-top: 2rem;
+		margin: 2rem auto 0;
+		width: 1200px;
 	}
 }
