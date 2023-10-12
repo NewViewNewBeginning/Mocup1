@@ -181,9 +181,10 @@ nav a {
 
 .event-half {
 	display: flex;
+	width: 100%;
 }
 .event-img {
-	min-width: 40%;
+	width: 40%;
 	overflow: hidden;
 }
 .event-img img {
@@ -195,6 +196,16 @@ nav a {
 }
 .event-card {
 	padding: 0.4rem;
+	width: 100%;
+}
+.event-text {
+	max-width: 100%;
+	overflow-wrap: break-word;
+}
+
+.event-details {
+	width: 100%;
+	overflow: auto;
 }
 
 /* =========>> FOOTER STYLES <<========= */
