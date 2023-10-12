@@ -1,0 +1,278 @@
+/* =========>> BASIC CSS RESET <<========= */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* =========>> BASIC STYLES <<========= */
+
+body {
+	font-family: sans-serif, Arial, Helvetica;
+	line-height: 1.5;
+	background-color: black;
+	color: white;
+}
+.wrapper {
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+h2 {
+	font-size: 1.2rem;
+}
+
+.grey-text {
+	color: #beb4b4;
+}
+
+/* =========>> HEADER STYLES <<========= */
+
+.nav-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+}
+.logo {
+	height: 4rem;
+	width: auto;
+}
+/* Navigation styles (default hidden) */
+nav {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+/* Navigation link styles */
+nav a {
+	text-align: center;
+	padding-bottom: 0.5rem;
+	width: 100%;
+	border-bottom: 1px solid white;
+}
+
+/* Hamburger icon style */
+
+.fa-solid {
+	font-size: 2.5rem;
+}
+/* Close icon for hamburger menu (default hidden) */
+#close-ham {
+	display: none;
+}
+
+/* =========>> SHOWCASE SECTION <<========= */
+
+/* Styles for the showcase and main image */
+
+.showcase,
+.main-image img {
+	width: 100%;
+}
+.main-image img {
+	height: auto;
+}
+
+/* Text overlaying main image (default hidden) */
+
+.main-img-text {
+	display: none;
+}
+
+/* Thumbnail styles */
+
+.thumbnails {
+	display: flex;
+	justify-content: space-between;
+	background-color: darkgray;
+	padding: 2px;
+}
+.thumbnail {
+	width: 20%;
+}
+.thumbnail-text {
+	display: none;
+}
+.thumbnail img {
+	padding: 1px;
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+}
+
+/* =========>> SUBBANNER SECTION <<========= */
+
+.sub-baner {
+	display: none;
+}
+
+/* =========>> MAIN ARTICLE STYLES <<========= */
+
+.main-article {
+	margin: 1rem 0;
+}
+.main-article h1 {
+	padding: 0.5rem 0;
+	border-bottom: 1px solid white;
+	margin-bottom: 1rem;
+}
+
+/* =========>> EVENTS SECTION <<========= */
+
+.event-half {
+	display: flex;
+}
+.event-img {
+	min-width: 40%;
+	overflow: hidden;
+}
+.event-img img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	padding-right: 0.4rem;
+	border-right: 1px solid grey;
+}
+.event-card {
+	padding: 0.4rem;
+}
+
+/* =========>> FOOTER STYLES <<========= */
+
+footer {
+	background-color: #222222;
+	padding: 1rem 0 0.4rem;
+	text-align: center;
+}
+
+/* =========>> MEDIA QUERIES <<========= */
+
+/* Tablet styles */
+
+@media screen and (min-width: 568px) {
+	#open-ham {
+		display: none;
+	}
+	#close-ham {
+		display: block;
+	}
+	nav {
+		display: flex;
+	}
+}
+
+/* Desktop styles */
+
+@media screen and (min-width: 966px) {
+	.wrapper {
+		padding: 0 4rem;
+		max-width: 1200px;
+	}
+	header {
+		display: flex;
+		justify-content: space-between;
+	}
+	nav {
+		flex-direction: row;
+	}
+	nav a {
+		border-bottom: none;
+	}
+
+	#close-ham {
+		display: none;
+	}
+	/* Showcase with images */
+	.showcase {
+		display: flex;
+		justify-content: space-between;
+		gap: 3rem;
+	}
+	.main-image {
+		width: 60%;
+	}
+	.main-image img {
+		height: 80%;
+		width: 100%;
+		object-fit: cover;
+	}
+	.main-img-title {
+		font-size: 1.2rem;
+		font-weight: 600;
+	}
+	.main-img-text {
+		display: block;
+		padding: 1rem;
+	}
+	.thumbnails {
+		width: 40%;
+		background: transparent;
+		flex-direction: column;
+		justify-content: flex-end;
+		gap: 1rem;
+	}
+	.thumbnail {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		gap: 1rem;
+	}
+	.thumbnail img {
+		width: 40%;
+		height: auto;
+		object-fit: cover;
+		border: 1px solid grey;
+	}
+	.thumbnail-text {
+		display: block;
+	}
+
+	.events {
+		display: flex;
+	}
+
+	.sub-baner {
+		display: block;
+		background-color: #222222;
+		padding: 2rem;
+		margin-top: 2rem;
+	}
+	.sub-baner p {
+		font-weight: 600;
+	}
+	footer {
+		margin-top: 2rem;
+	}
+}
