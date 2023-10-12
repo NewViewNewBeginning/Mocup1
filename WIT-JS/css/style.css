@@ -39,10 +39,23 @@ a {
 /* Main colors variables */
 
 :root {
-	--main-bg: #000000;
-	--secondary-bg: #222222;
+	--main-bg: #000;
+	--secondary-bg: #222;
 	--text-secondary-color: #beb4b4;
 	--text-color: #f2f2f2;
+}
+
+/* light mode colors */
+
+:root.light-mode {
+	--main-bg: #f2f2f2;
+	--secondary-bg: #fff;
+	--text-secondary-color: #beb4b4;
+	--text-color: #000;
+}
+/* to target logo for better contrast on light mode */
+:root.light-mode .logo {
+	background-color: #444;
 }
 
 body {
@@ -76,6 +89,12 @@ h2 {
 	height: 4rem;
 	width: auto;
 }
+
+.mode-icon {
+	margin-left: 1rem;
+	cursor: pointer;
+}
+
 /* Navigation styles (default hidden) */
 nav {
 	display: none;
@@ -220,6 +239,10 @@ footer {
 		border-bottom: none;
 	}
 
+	.mode-icons {
+		margin-left: 3rem;
+	}
+
 	#close-ham {
 		display: none;
 	}
@@ -274,7 +297,7 @@ footer {
 
 	.sub-baner {
 		display: block;
-		background-color: #222222;
+		background-color: var(--secondary-bg);
 		padding: 2rem;
 		margin-top: 2rem;
 	}
