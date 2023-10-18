@@ -253,11 +253,16 @@ nav a {
 	text-transform: uppercase;
 }
 
-/* Featured food section */
+/* Featured food section and blog */
+.featured-food {
+	margin-bottom: 2rem;
+}
 
-.featured-food h2 {
+.featured-food h2,
+.blog h2 {
 	text-align: center;
-	padding: 2rem 0;
+	padding: 3rem 0;
+	text-transform: uppercase;
 }
 .card-container {
 	margin: 0 auto;
@@ -297,4 +302,30 @@ nav a {
 }
 .card-text h4 {
 	margin: 0.5rem 0;
+}
+
+.blog {
+	background-color: var(--secondary-bg-color);
+}
+
+.card-date {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 0.6rem;
+	font-weight: 600;
+	padding: 0.5rem;
+	color: var(--cta-color);
+	background-color: rgba(234, 242, 255, 0.8);
+}
+
+.card-text span {
+	display: inline-block;
+	margin: 0.5rem 0 1rem 0;
+}
+
+.blog-link {
+	display: inline-block;
+	margin: 1rem 0;
+	color: var(--cta-color);
 }
