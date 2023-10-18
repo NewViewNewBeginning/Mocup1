@@ -26,7 +26,44 @@ body {
 	font-family: "Roboto", sans-serif;
 	color: var(--font-color);
 }
+p {
+	line-height: 1.5;
+}
 
+h1 {
+	font-size: 2.5rem;
+	font-weight: 300;
+}
+
+.btn-main {
+	background-color: var(--cta-color);
+	color: inherit;
+	width: 9rem;
+	height: 2.5rem;
+	border: none;
+	outline: none;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	text-transform: uppercase;
+}
+.btn-secondary {
+	background-color: var(--main-bg-color);
+	color: var(--cta-color);
+	min-width: 6rem;
+	height: 2rem;
+	border: none;
+	outline: none;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
 /* Header */
 
 header {
@@ -69,10 +106,58 @@ nav a {
 	width: 100%;
 	border-bottom: 1px solid var(--underline);
 	padding: 1rem 0;
+	text-transform: uppercase;
 }
 
-/* Hero Section */
+/* Banner Section */
 
-.hero {
-	background: ;
+.banner {
+	background: url(../img/banner-bg.jpg) no-repeat center center/cover;
+	color: var(--bright-font-color);
+	text-align: center;
+	height: 60vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+.banner span {
+	order: -1;
+}
+
+/* Order section */
+.order {
+	margin: 3rem 0;
+	text-transform: uppercase;
+}
+.order,
+.order-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.order-info {
+	width: 95%;
+	background-color: var(--cta-color);
+	color: var(--bright-font-color);
+	text-align: center;
+	gap: 1rem;
+	padding: 1rem;
+}
+.order img {
+	width: 80%;
+}
+
+.phone {
+	background-color: #f38370;
+	width: 90%;
+	padding: 2rem;
+}
+.phone a {
+	display: block;
+	margin-top: 1rem;
+	font-weight: 600;
 }
