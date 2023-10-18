@@ -1,0 +1,78 @@
+/* Basic Reset Values */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+:root {
+	--main-bg-color: #fff;
+	--secondary-bg-color: #eaf2ff;
+	--dark-bg-color: #373e50;
+	--cta-color: #f3755f;
+	--font-color: #0b0a12;
+	--bright-font-color: #fffdf1;
+	--underline: #c5c9d0;
+}
+
+/* Basic Styles */
+
+body {
+	font-family: "Roboto", sans-serif;
+	color: var(--font-color);
+}
+
+/* Header */
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: var(--secondary-bg-color);
+}
+
+.logo {
+	font-style: italic;
+	padding: 1rem 0;
+	font-size: 2.5rem;
+	text-align: center;
+	border-bottom: 1px solid var(--underline);
+	width: 90%;
+}
+.ham-icon {
+	color: var(--bright-font-color);
+	background-color: var(--cta-color);
+	font-size: 1.5rem;
+	padding: 0.3rem 0.7rem;
+	border-radius: 0.3rem;
+	-webkit-border-radius: 0.3rem;
+	-moz-border-radius: 0.3rem;
+	-ms-border-radius: 0.3rem;
+	-o-border-radius: 0.3rem;
+	margin: 1rem 0;
+	cursor: pointer;
+}
+
+.menu {
+	text-align: center;
+	width: 100%;
+}
+
+nav a {
+	display: inline-block;
+	width: 100%;
+	border-bottom: 1px solid var(--underline);
+	padding: 1rem 0;
+}
+
+/* Hero Section */
+
+.hero {
+	background: ;
+}
