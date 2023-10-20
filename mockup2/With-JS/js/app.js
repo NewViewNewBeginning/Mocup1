@@ -4,6 +4,6 @@ import { scrollTop } from "./module/scroll-top.js";
 
 document.addEventListener("DOMContentLoaded", function () {
 	hamMenu();
-	quoteHandle();
+	setInterval(quoteHandle, 10000);
 	scrollTop();
 });
