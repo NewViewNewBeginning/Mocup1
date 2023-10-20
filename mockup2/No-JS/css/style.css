@@ -255,7 +255,6 @@ nav a {
 }
 .form-input {
 	display: flex;
-	justify-content: space-between;
 	border-bottom: 1px solid var(--underline);
 	margin-bottom: 1rem;
 }
@@ -548,6 +547,10 @@ footer {
 	.blog-img {
 		flex-basis: 50%;
 	}
+
+	.img-container {
+		bottom: 0;
+	}
 	/* newsletter */
 	.newsletter form {
 		flex-direction: row;
@@ -572,6 +575,9 @@ footer {
 @media screen and (min-width: 1200px) {
 	.form-img {
 		align-self: stretch;
+	}
+	.blog-img img {
+		height: 100%;
 	}
 
 	/* Featured food */
