@@ -1,3 +1,4 @@
+// Array containing a list of promotional quotes for food discounts
 const quotes = [
 	"Feast like a king without the royal expenses! Grab our exclusive discounts now!",
 	"Turn your moments delicious. Dive into our special meal offers!",
@@ -11,8 +12,13 @@ const quotes = [
 	"Discover the taste of savings. Indulge in our exclusive food promotions!",
 ];
 
+// Function that randomly selects a quote from the quotes array
+// and displays it in an element with the class "quote-text"
 export function quoteHandle() {
+	// Get the element where the quote needs to be displayed
 	const quotePlaceholder = document.querySelector(".quote-text");
+
+	// Assign a random quote from the quotes array to the textContent of the element
 	quotePlaceholder.textContent =
 		quotes[Math.floor(Math.random() * quotes.length)];
 }
