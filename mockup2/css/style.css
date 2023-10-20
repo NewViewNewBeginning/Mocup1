@@ -527,6 +527,20 @@ footer {
 	.featured-food .card-container .card {
 		padding: 1.5rem;
 	}
+	/* Blog Section */
+	.blog .card-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+		max-width: 80%;
+	}
+	.blog .card-container .card {
+		display: flex;
+	}
+	.blog-text,
+	.blog-img {
+		flex-basis: 50%;
+	}
 }
 
 @media screen and (min-width: 1200px) {
