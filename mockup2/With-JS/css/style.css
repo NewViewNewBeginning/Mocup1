@@ -279,6 +279,7 @@ nav.show {
 	padding-bottom: 0.4rem;
 	font-size: 0.8rem;
 	color: var(--underline);
+	width: 100%;
 }
 
 .form-btn {
@@ -640,6 +641,10 @@ footer {
 	}
 	.blog-img img {
 		height: 100%;
+	}
+
+	.order {
+		max-width: 1200px;
 	}
 
 	/* Featured food */
